@@ -1,0 +1,19 @@
+<html>
+<body>
+<script type="text/javascript">
+function factorial(n)
+{
+if(n<=1){
+return 1;
+}
+else{
+return (n*factorial(n-1));
+}
+}
+var a,n;
+a=window.prompt("enter a");
+n=parseInt(a);
+document.writeln(factorial(n));
+</script>
+</body>
+</html>

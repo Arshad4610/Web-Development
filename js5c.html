@@ -1,0 +1,22 @@
+<html>
+<body>
+<script type="text/javascript">
+var d=new Date();
+var hrs=d.getHours();
+var min=d.getMinutes();
+var sec=d.getSeconds();
+if(hrs<12)
+{
+	document.writeln("Good Morning<br>"+<b>"Time :"</b>+hrs+":"+min+":"+sec);
+}
+else if(hrs<16)
+{
+	document.writeln("Good Afternoon<br>"+"<u>"Time :"</u>"+hrs+":"+min+":"+sec);
+}
+else
+{
+	document.writeln("Good Evening <br>"+"Time :"+hrs+":"+min+":"+sec);
+}
+</script>
+</body>
+</html>                                                                                                                                           

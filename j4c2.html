@@ -1,0 +1,38 @@
+<html>
+<body>
+<script type="text/javascript">
+function mulmat(mat1,mat2,res)
+{
+	let i,j,k;
+	for(i=0;i<mat1.length;i++)
+	{
+		for(j=0;j<mat1.length;j++)
+		{
+			res[i][j]=0;
+			for(k=0;k<mat1.length;k++)
+			{
+				res[i][j]+=mat1[i][k]*mat2[k][j];
+
+			}
+		}
+	}
+
+}
+
+var res=[[],[],[]];
+var mat1=[[1,2,3],[1,2,3],[1,2,3]];
+var mat2=[[1,2,3],[1,2,3],[1,2,3]];
+mulmat(mat1,mat2,res);
+document.writeln("the resultant matrix is:<br>");
+for(i=0;i<mat1.length;i++)
+{
+	for(j=0;j<mat1.length;j++)
+	{
+		document.writeln(res[i][j]);
+	}
+	document.writeln("<br>");
+}
+
+</script>
+</body>
+</html>

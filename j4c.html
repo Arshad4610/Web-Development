@@ -1,0 +1,25 @@
+<html>
+<head>
+</head>
+<body>
+<script type="text/javascript">
+function addmat(mat1,mat2)
+{
+var mat=[];
+for(i=0;i<mat1.length;i++)
+{
+mat[i]=[];
+document.writeln("mat1:"+mat1[i]+"<br>");
+for(j=0;j<mat1[i].length;j++)
+{
+mat[i][j]=mat1[i][j]+mat2[i][j];
+}
+}
+document.writeln(mat);
+}
+var mat1=[[1,2,3],[4,5,6],[7,8,9]];
+var mat2=[[1,2,3],[4,5,6],[7,8,9]];
+addmat(mat1,mat2);
+</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<html>
+<body>
+<script type="text/javascript">
+function power(x,n)
+{
+if(n==0){
+return 1;
+}
+else{
+return x*power(x,n-1);
+}
+}
+var a,n,b,x;
+a=window.prompt("enter a");
+b=window.prompt("enter b");
+n=parseInt(b);
+x=parseInt(a);
+document.writeln(power(x,n));
+</script>
+</body>
+</html>

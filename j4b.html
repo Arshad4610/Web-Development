@@ -1,0 +1,33 @@
+<html>
+<body>
+<script type="text/javascript">
+function binarysearch(n,x,start,end)
+{
+	
+	while(start<=end)
+
+	{
+		let mid=Math.floor((start+end)/2);
+		if(n[mid]==x)
+		{
+			mid=mid+1;
+			document.write("element is found at "+mid+" position");
+			break;
+		}
+		else if( x > n[mid] )
+			start=mid+1;
+		else
+			end=mid-1;
+	}
+	return -1;
+}
+
+
+let n =[1,2,3,4,5,6];
+let start=0,x=3;
+let end=(n.length)-1;
+binarysearch(n,x,start,end);
+</script>
+</body>
+</html>
+

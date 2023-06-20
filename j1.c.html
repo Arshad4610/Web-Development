@@ -1,0 +1,29 @@
+<html>
+<head>
+<script type="text/javascript">
+var a,b,n1,n2,result;
+n1=window.prompt("enter a");
+n2=window.prompt("enter b");
+a=parseInt(n1);
+b=parseInt(n2);
+operator=window.prompt("enter operator");
+switch(operator){
+case '+':
+result=a+b;
+break;
+case '-':
+result=a-b;
+break;
+case '*':
+result=a*b;
+break;
+case '/':
+result=a/b;
+break;
+default:
+result="none";
+}
+document.write(result);
+</script>
+</head>
+</html>
